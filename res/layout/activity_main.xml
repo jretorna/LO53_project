@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.utbm.retornaz.connnexionwifi.Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="@string/titleTextView" />
+
+    <Button
+        android:id="@+id/viewerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/configBtn"
+        android:layout_alignBottom="@+id/configBtn"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/configBtn"
+        android:text="@string/viewerBtn" />
+
+    <Button
+        android:id="@+id/configBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/configBtn" />
+
+    <ImageButton
+        android:id="@+id/settingBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/titleTextView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/param"
+        android:src="@drawable/param" />
+
+    <ImageButton
+        android:id="@+id/helpBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/configBtn"
+        android:layout_alignTop="@+id/settingBtn"
+        android:background="@android:color/transparent"
+        android:src="@drawable/help" />
+    
+</RelativeLayout>

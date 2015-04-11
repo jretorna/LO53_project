@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.utbm.retornaz.connnexionwifi.Activities"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="fr.utbm.retornaz.connnexionwifi.Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+  
+            android:name="fr.utbm.retornaz.connnexionwifi.Activities.Setting"
+            android:label="@string/setting_activity" >
+        </activity>
+        
+                <activity
+            android:name="fr.utbm.retornaz.connnexionwifi.Activities.Help"
+            android:label="@string/help_activity" >
+        </activity>
+    </application>
+
+</manifest>

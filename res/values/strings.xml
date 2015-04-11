@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- MAIN ACTIVITY  -->
+    <string name="app_name">ConnnexionWifi</string>
+    <string name="setting_activity">Setting</string>
+    <string name="help_activity">Help</string>
+    <string name="titleTextView">Wifi\'s connection</string>
+    <string name="action_settings">Settings</string>
+    <string name="configBtn">Configuration</string>
+    <string name="viewerBtn">Viewer</string>
+    
+    
+    <!-- SETTING ACTIVITY -->
+    <string name="settingTextView">Settings</string>
+    <string name="serverAddressTextView">Server\'s address \:</string>
+    <string name="serverAddressEditText">type server\'s address&#8230;</string>
+    <string name="serverPortTextView">Server\'s port \:</string>
+    <string name="serverPortEditText">type server\'s port&#8230;</string>
+    <string name="confirmSettingBtn">Confirmer</string>
+    
+    
+    <!--  HELP ACTIVTY -->
+    <string name="helpTextView">Help</string>
+    <string name="helpDeveloperTextView">LO53\'s project developed by\n* Sebastien RECEVEUR\n* Jeremy RETORNAZ\n* Jean FISCHER\n* Emmanuel TOSI</string>
+
+</resources>
