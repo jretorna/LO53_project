@@ -50,9 +50,9 @@ public class MainActivity extends ActionBarActivity {
 		jbPositioning.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(final View v) {
-				// launchPositioningActivity(v);
-				Toast.makeText(getApplicationContext(), "appui positioning",
-						Toast.LENGTH_LONG).show();
+				launchPositioningActivity(v);
+//				Toast.makeText(getApplicationContext(), "appui positioning",
+//						Toast.LENGTH_LONG).show();
 			}
 		});
 
@@ -98,8 +98,8 @@ public class MainActivity extends ActionBarActivity {
 	// startActivity(intent);
 	// }
 	//
-	// private void launchPositioningActivity(final View v) {
-	// Intent intent = new Intent(MainActivity.this, Positioning.class);
-	// startActivity(intent);
-	// }
+	
+	 private void launchPositioningActivity(final View v) {
+		 startActivity(new Intent(MainActivity.this, PrintLocation.class));
+	 }
 }
