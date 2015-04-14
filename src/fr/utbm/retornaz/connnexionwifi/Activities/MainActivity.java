@@ -1,8 +1,8 @@
 package fr.utbm.retornaz.connnexionwifi.Activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
 	/*---------------------*/
 	private Button jbCalibration, jbPositioning;
@@ -33,8 +33,6 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(final View v) {
 				launchSettingActivity(v);
-				Toast.makeText(getApplicationContext(), "appui setting",
-						Toast.LENGTH_LONG).show();
 			}
 		});
 
@@ -51,8 +49,6 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(final View v) {
 				launchPositioningActivity(v);
-//				Toast.makeText(getApplicationContext(), "appui positioning",
-//						Toast.LENGTH_LONG).show();
 			}
 		});
 
@@ -98,8 +94,8 @@ public class MainActivity extends ActionBarActivity {
 	// startActivity(intent);
 	// }
 	//
-	
-	 private void launchPositioningActivity(final View v) {
-		 startActivity(new Intent(MainActivity.this, PrintLocation.class));
-	 }
+
+	private void launchPositioningActivity(final View v) {
+		startActivity(new Intent(MainActivity.this, PrintLocation.class));
+	}
 }

@@ -8,19 +8,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="fr.utbm.retornaz.connnexionwifi.Activities.PrintLocation">
 
-<!-- 	<ScrollView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" > -->
-
 	    <ImageView
 	        android:id="@+id/imageViewMap"
-	        android:layout_width="fill_parent"
+	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
 	        android:adjustViewBounds="true"
-	        android:background="@drawable/abc_ab_solid_light_holo"
-	        android:src="@drawable/map" >
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/map_rote" />
 
-	   </ImageView>
- <!--   </ScrollView> -->
+	    <ImageButton
+	        android:id="@+id/settingViewerBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/imageViewMap"
+	        android:layout_marginStart="12dp"
+	        android:layout_marginEnd="26dp"
+	        android:background="@android:color/transparent"
+	        android:drawableTop="@drawable/param_rote"
+	        android:src="@drawable/param_rote" />
+	    
+	    <ImageButton 
+	        android:id="@+id/locateMeBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginStart="12dp"
+	        android:layout_alignTop="@+id/imageViewMap"
+	        android:background="@android:color/transparent"
+	        android:drawableTop="@drawable/locate_me"
+	        android:src="@drawable/locate_me"/>
 
 </RelativeLayout>

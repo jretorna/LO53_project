@@ -6,11 +6,11 @@
     <string name="app_name">ConnnexionWifi</string>
     <string name="setting_activity">Setting</string>
     <string name="help_activity">Help</string>
+    <string name="print_location_activity">Location</string>
     <string name="titleTextView">Wifi\'s connection</string>
     <string name="action_settings">Settings</string>
     <string name="configBtn">Configuration</string>
     <string name="viewerBtn">Viewer</string>
-    <string name="print_location_acitivy">Location</string>
     
     
     <!-- SETTING ACTIVITY -->

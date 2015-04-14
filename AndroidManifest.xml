@@ -36,7 +36,7 @@
         
         <activity
             android:name="fr.utbm.retornaz.connnexionwifi.Activities.PrintLocation"
-            android:label="@string/print_location_acitivy" >
+            android:label="@string/print_location_activity" >
         </activity>
         
     </application>
