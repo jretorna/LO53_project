@@ -11,7 +11,6 @@ import fr.utbm.retornaz.connnexionwifi.Activities.R;
 public class TouchView extends View {
 	private float imageX;
 	private float imageY;
-	private Canvas canvasReturn;
 
 	// Constructeur
 	public TouchView(final Context context) {
@@ -33,11 +32,8 @@ public class TouchView extends View {
 	protected void onDraw(final Canvas canvas) {
 		Bitmap monImage = BitmapFactory.decodeResource(getResources(),
 				R.drawable.map_marker);
-
 		canvas.drawBitmap(monImage, imageX, imageY, null);
-
 		invalidate(); // Efface pour redessiner.
-		canvasReturn = canvas;
 	}
 
 	// Cette fonction est appeler lorsque la taille de l'écran change, par
@@ -50,7 +46,4 @@ public class TouchView extends View {
 
 	}
 
-	public Canvas getCanvas() {
-		return canvasReturn;
-	}
 }
