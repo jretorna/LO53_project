@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -39,9 +38,7 @@ public class MainActivity extends Activity {
 		jbCalibration.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(final View v) {
-				// launchCalibrationActivity(v);
-				Toast.makeText(getApplicationContext(), "appui calibration",
-						Toast.LENGTH_LONG).show();
+				launchCalibrationActivity(v);
 			}
 		});
 
@@ -59,7 +56,6 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
-
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -89,11 +85,10 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(MainActivity.this, Help.class));
 	}
 
-	// private void launchCalibrationActivity(final View v) {
-	// Intent intent = new Intent(MainActivity.this, Calibration.class);
-	// startActivity(intent);
-	// }
-	//
+	private void launchCalibrationActivity(final View v) {
+		Intent intent = new Intent(MainActivity.this, Calibration.class);
+		startActivity(intent);
+	}
 
 	private void launchPositioningActivity(final View v) {
 		startActivity(new Intent(MainActivity.this, PrintLocation.class));

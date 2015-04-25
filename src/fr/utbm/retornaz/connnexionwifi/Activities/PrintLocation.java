@@ -26,6 +26,7 @@ public class PrintLocation extends Activity {
 	private int viewHeight, viewWidth;
 	private Matrix matrix;
 	private float[] imageValues = new float[9];
+	private int[] imgPosition = new int[2];
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
@@ -59,10 +60,11 @@ public class PrintLocation extends Activity {
 			@Override
 			public void onClick(final View v) {
 				// Start of the localisation
-				// getBundle();
 				// XXX Jeremy supprimer ce print
+				Log.w("CLIC", "******** CLIC ********");
+
 				RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
-				Log.d("bundle", "x: " + x + " | y: " + y);
+
 				marker = new ImageView(getApplicationContext());
 				marker.setImageResource(R.drawable.map_marker);
 				markerBounds = marker.getDrawable().getBounds();
@@ -74,9 +76,15 @@ public class PrintLocation extends Activity {
 				// XXX Jeremy supprimer ce print
 				Log.d("ViewDimension", "height: " + viewHeight + " | width: "
 						+ viewWidth);
+				/*--- Get the location of the map ---*/
+				mapImageView.getLocationOnScreen(imgPosition);
+				// XXX Jeremy supprimer ce print
+				Log.d("ImgLocation", "x: " + imgPosition[0] + " | y: "
+						+ imgPosition[1]);
+
 				getMatrix();
-				marker.setX(viewWidth / 2);
-				marker.setY(viewHeight / 2);
+				marker.setX(imgPosition[0] - marker.getX() - 50);
+				marker.setY(imgPosition[1] - 62 - marker.getY() / 2);
 				relativeLayout.addView(marker);
 			}
 

@@ -43,6 +43,12 @@
             android:label="@string/print_location_activity">
         </activity>
         
+        <activity
+            android:name="fr.utbm.retornaz.connnexionwifi.Activities.Calibration"
+        	android:screenOrientation="portrait"  
+            android:label="@string/calibration_activity">
+        </activity>
+        
     </application>
 
 </manifest>
